@@ -1,3 +1,6 @@
 # Project-First-Class-Interior
 
-ez project
+Project Manager - Jack
+Developer - Aakesh
+Designer - Nate
+Tester - Winchester
