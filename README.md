@@ -8,7 +8,7 @@ This will show us how each of the roles in a team work together to complete a pr
 
 
 
-Project Manager - Jack
-Developer - Aakesh
-Designer - Nate
+Project Manager - Jack <br/>
+Developer - Aakesh <br/>
+Designer - Nate <br/>
 Tester - Winchester
