@@ -1,9 +1,14 @@
-# Project-First-Class-Interior
+# Project First Class Interior
+
+In this project we are working in different roles on a team to complete a website.
+We each have different tasks to complete to finish the project.
+
+The purpose of this project is to prepare us for how projects are done in the workspace.
+This will show us how each of the roles in a team work together to complete a project.
+
+
 
 Project Manager - Jack
 Developer - Aakesh
 Designer - Nate
 Tester - Winchester
-
-
-I have uploaded my POW, we could all just work out of this and do each part we need to do then copy and share around the doc.
