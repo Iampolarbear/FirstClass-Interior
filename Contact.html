@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="Style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <center><img src="Images/Capitivate Interiors.png" alt="head"></center>
+          </header>
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="Navbar.html">Menu |</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="About.html">About Us!</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact Us!</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Shop.html">Shop!</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div>
+            <div class="ContactInfo" onmouseover="ChangeAlignment()" onmouseout="ResetAlignment()" id="ContactInform">
+                <h2 id="ContactUsFont" class="text-center fw-bold"  onmouseover="UpdateFont()">Contact Info</h2>
+                <div class="BOLDERS">
+                <center>
+                    <p ><spam class="fw-bold">Address:</spam> 4 The street</p>
+                    <p ><spam class="fw-bold">Phone Number:</spam> 02123456789</p>
+                    <p ><spam class="fw-bold">Email:</spam> capativesupport@gmail.co.nz</p>
+                    <p ><spam class="fw-bold">fax:</spam> +5734607</p>
+                </center>
+                </div>
+            </div>
+          </div>
+
+        <div class="col-xs-1 center-block">
+          <form id="ContactForm">
+
+            <div class="mb-3">
+                <label for="exampleInputName1" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="exampleInputName1" aria-describedby="namelHelp">
+                <div id="nameHelp" class="form-text">Doesn't have to be full name, atleast your first and last :)</div>
+              </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputSubject=" class="form-label">Subject</label>
+              <input type="Subject" class="form-control" id="exampleInputSubject1" aria-describedby="subjectHelp">
+             
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputMessage1" class="form-label"></label>
+                <textarea class="form=control" id="message" placeholder="Message" style="height: 10rem;" data-sb-validations="Required"></textarea>
+                <div class="invalid-message" data-sb-feedback="message:required">Please write down a message</div>
+                <div id="MessageHelp" class="form-text">Your message is valued.</div>
+              </div>
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+
+
+          <footer class="footer">
+            <div class="container-fluid text-center">
+                <div class="p-sm-3"></div>
+                <p>Check out our Socials!</p>
+                <a href="https://www.facebook.com" class="fa fa-facebook text-secondary fa-2xl" >Facebook</a>
+                <a href="https://www.twitter.com" class="fa fa fa-twitter text-secondary fa-2xl">Twitter</a>
+                <a href="https://www.linkedin.com" class="fa fa-linkedin text-secondary fa-2xl">LinkedIn</a>
+                <a href="https://www.instagram.com" class="fa fa-instagram text-secondary fa-2xl">Instagram</a>
+                <div class="p-sm-3"></div>
+            </div>
+        </footer>
+    </body>
+
+    <script>
+          function UpdateFont() {
+            var font = document.getElementById('ContactUsFont')
+
+            font.style.color = "yellow";
+            font.style.fontSize = "90px";
+          }
+
+          function ChangeAlignment() {
+            var ref = document.getElementById('ContactInform')
+
+            ref.style.cssFloat = 'right';
+          }
+
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/0a821b5a3e.js" crossorigin="anonymous"></script>
+</html>

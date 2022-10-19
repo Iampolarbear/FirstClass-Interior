@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="Style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <center><img src="Images/Capitivate Interiors.png" alt="head deez"></center>
+          </header>
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="Navbar.html">Menu |</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="About.html">About Us!</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact Us!</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Shop.html">Shop!</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div>
+            <div onmouseover="ShowButton(this.id)" onmouseout="HideButton(this.id)">
+                <center>
+                <h2 class="fw-bold" id="CEO_HEADER">CEO of the Company</h2>
+                <img src="Images/Andrew Tate.jpg" class="img-thumbnail" id="CEO_IMG">
+                <p><spam class="fw-bold" id="CEO_NAME">Andrew Tate:</spam> CEO of the company, has one question for all: "What color your Buggati?"</p>
+                <button type="button" class="btn btn-dark" id="CEO_BTN" onclick="ChangeMD()">Change to MD</button>
+                </center>
+            </div>
+            <div>
+                <div onmouseover="ShowButton(this.id)" onmouseout="HideButton(this.id)">
+                    <center>
+                        <h2 class="fw-bold">Hotel Designer</h2>
+                        <img src="Images/Daddy Noel.jpg" class="img-thumbnail">>
+                        <p><spam class="fw-bold">Noel Deyze;:</spam> Noel has taste in designing Hotel as he has been to many himself</p>
+                        <button type="button" class="btn btn-dark" onclick="HideStaff()">Hide Staff</button>
+                        </center>
+                </div>
+                <div onmouseover="ShowButton(this.id)" onmouseout="HideButton(this.id)">
+                    <center>
+                        <h2 class="fw-bold">Director</h2>
+                        <img src="Images/Markiplier.jpg" class="img-thumbnail">>
+                        <p><spam class="fw-bold">Mark Fisbach:</spam> Mark creates unique drawings when it comes to designing, plays an important role to the company</p>
+                        <button type="button" class="btn btn-dark" onclick="HideStaff()">Hide Staff</button>
+                        </center>
+                </div>
+                <div onmouseover="ShowButton(this.id)" onmouseout="HideButton(this.id)">
+                    <center>
+                        <h2 class="fw-bold">Restaurant Designer</h2>
+                        <img src="Images/KSI.jpg" class="img-thumbnail">>
+                        <p><spam class="fw-bold">JJ:</spam> JJ Designs Restaurants to match his taste I can say</p>
+                        <button type="button" class="btn btn-dark" onclick="HideStaff()">Hide Staff</button>
+                        </center>
+                </div>
+                <div onmouseover="ShowButton(this.id)" onmouseout="HideButton(this.id)">
+                    <center>
+                        <h2 class="fw-bold">Architect</h2>
+                        <img src="Images/Mark Rober.jpg" class="img-thumbnail">>
+                        <p><spam class="fw-bold">Mark Rober:</spam> Rober can create some pretty erotic architectural designs of homes</p>
+                        <button type="button" class="btn btn-dark" onclick="HideStaff()">Hide Staff</button>
+                        </center>
+                </div>
+                <div onmouseover="ShowButton(this.id)" onmouseout="HideButton(this.id)">
+                    <center>
+                        <h2 class="fw-bold">Office Designer</h2>
+                        <img src="Images/Elon Muskers.jpg" class="img-thumbnail">>
+                        <p><spam class="fw-bold">Elon Musk</spam> Elon can easily design anything you put him through, he specialises more in office designs</p>
+                        <button type="button" class="btn btn-dark" onclick="HideStaff()">Hide Staff</button>
+                        </center>
+                </div>
+            </div>
+          </div>
+
+
+
+          <footer class="footer">
+            <div class="container-fluid text-center">
+                <div class="p-sm-3"></div>
+                <p>Check out our Socials!</p>
+                <a href="https://www.facebook.com" class="fa fa-facebook text-secondary fa-2xl" >Facebook</a>
+                <a href="https://www.twitter.com" class="fa fa fa-twitter text-secondary fa-2xl">Twitter</a>
+                <a href="https://www.linkedin.com" class="fa fa-linkedin text-secondary fa-2xl">LinkedIn</a>
+                <a href="https://www.instagram.com" class="fa fa-instagram text-secondary fa-2xl">Instagram</a>
+                <div class="p-sm-3"></div>
+            </div>
+        </footer>
+    </body>
+
+    <script src="https://kit.fontawesome.com/0a821b5a3e.js" crossorigin="anonymous"></script>
+
+    <script>
+        function ChangeMD() 
+        {
+        var CEOBUTTON = document.getElementById('CEO_BTN');
+        var CEOHEADER = document.getElementById('CEO_HEADER');
+        var CEOIMG = document.getElementById('CEO_IMG');
+        var CEONAME = document.getElementById('CEO_NAME');
+
+        
+        if(!clicked)
+        {
+            CEOHEADER.textContent = "Tristan Tate";
+            CEOIMG.src = "/Images/Tristan Tate.jpg";
+            CEONAME.textContent = "Tristan the brother of Andrew Tate, MD";
+            CEOBUTTON.textContent = "Change to CEO"
+            clicked = true;
+        }
+        else
+        {
+            CEOHEADER.textContent = "Andrew Tate";
+            CEOIMG.src = "Images/Andrew Tate.jpg";
+           CEONAME.textContent = "CEO of the company, has one question for all: What color your Buggati?";
+           clicked = false;
+        }
+    }
+
+
+
+
+    </script>
