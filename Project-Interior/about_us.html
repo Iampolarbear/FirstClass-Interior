@@ -7,14 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="JS\java.js"></script>
-    <title>Captivate Interiors</title>
+    <title>First Class Interiors</title>
 </head>
-<body class="bg-secondary">
-        <header class="bg-white">
+<body class="bg-success text-white">
+        <header>
             <div class="container">
                 <h1 class="text-center mb-0">
-                    <img src="Images\captivate.jpg" alt="Captivate Interiors Logo" class="pe-2" width="75">
-                    Captivate Interiors
+                    First Class Interiors
                 </h1>
             </div>   
         </header>
@@ -43,20 +42,18 @@
             </div>
         </nav>
         <div class="container-fluid">
-            <div class="row bg-secondary">
+            <div class="row bg-success">
                 <div class="col-lg-12">
                     <h1 class="text-center">About Us</h1>
                 </div>
             </div>
         </div>
 
-        <div class="card border-dark mb-3 text-center mx-auto mt-3 bg-dark text-white" style="max-width: 1050px;">
+        <div class="card border-dark mb-3 text-center mx-auto mt-3 bg-dark text-white" style="max-width: 1400px;">
             <div class="row g-0">
-              <div class="col-md-4">
-                <img id="CEO_IMG" src="Images\ceo.jpg" class="img-fluid rounded-start" alt="CEO Headshot" width="750">
-              </div>
-              <div class="col-md-8">
+              <div class="col-md-6">
                 <div class="card-body">
+                <img id="CEO_IMG" src="Images\ceo.jpg" class="img-fluid rounded-start" alt="CEO Headshot" width="400">
                   <h5 id="CEO_HD" class="card-title">Haro G. Warmen</h5>
                   <p id="CEO_TXT" class="card-text">The CEO of a corporation or company typically reports to the board of directors 
                     and is charged with maximizing the value of the business, which may include maximizing the share 
@@ -71,15 +68,29 @@
                   </p>
                 </div>
               </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <img id="CEO_IMG" src="Images\md.jpg" class="img-fluid rounded-start" alt="CEO Headshot" width="400">
+                    <h5 id="CEO_HD" class="card-title">Adrian B. Griffin</h5>
+                    <p id="CEO_TXT" class="card-text">The MD of a corporation or company typically reports to the board of directors 
+                      and is charged with maximizing the value of the business, which may include maximizing the share 
+                      price, market share, revenues or another element. In the non-profit and government sector, 
+                      MDs typically aim at achieving outcomes related to the organization's mission, usually provided 
+                      by legislation. MD are also frequently assigned the role of main manager of the organization and 
+                      the highest-ranking officer in the C-suite.The responsibilities of an organization's MD are set 
+                      by the organization's board of directors or other authority, depending on the organization's 
+                      structure. They can be far-reaching or quite limited and are typically enshrined in a formal 
+                      delegation of authority regarding business administration. Typically, responsibilities include being 
+                      an active decision-maker on business strategy and other key policy issues, leader, manager, and executor.
+                    </p>
+                  </div>
+                </div>
             </div>
 
           </div>
-          <div class="container d-flex flex-row justify-content-center pb-3">
-            <button class="btn btn-primary" id="CEO_BTN" onclick="changeMD()">Change To MD</button>
-          </div>
 
           <section class="p-5 bg-dark">
-            <div class="container">
+            <div class="container text-dark">
                 <h2 class="text-center text-white">Our Staff</h2>
                 <p class="lead text-center text-white mb-5">
                     <div class="row g-4">
@@ -105,7 +116,7 @@
                                 <div class="card-body text-center">
                                     <img src="Images\james.jpg" alt="" class="rounded-circle mb-3" width="250">
                                     <h3 class="card-title mb-3">James Smith</h3>
-                                    <p class="card-text">The sources of ideas for software products are plentiful. These ideas can come from market research 
+                                    <p class="card-text">These ideas can come from market research 
                                         including the demographics of potential new customers, existing customers, sales prospects who rejected the product, 
                                         other internal software development staff, or a creative third party. Ideas for software products are usually first 
                                         evaluated by marketing personnel for economic feasibility, for fit with existing channels distribution, for possible 
@@ -134,7 +145,7 @@
                                 <button id="button3" class="btn btn-primary" onclick="hideStaff3()">Hide Staff</button>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6" id="staff4" onmouseover="showButton4()" onmouseout="hideButton4()">
+                        <div class="col-md-6 col-lg-4" id="staff4" onmouseover="showButton4()" onmouseout="hideButton4()">
                             <div class="card bg-light">
                                 <div class="card-body text-center">
                                     <img src="Images\katelyn.jpg" alt="" class="rounded-circle mb-3" width="250">
@@ -151,7 +162,7 @@
                                 <button id="button4" class="btn btn-primary" onclick="hideStaff4()">Hide Staff</button>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6" id="staff5" onmouseover="showButton5()" onmouseout="hideButton5()">
+                        <div class="col-md-6 col-lg-4" id="staff5" onmouseover="showButton5()" onmouseout="hideButton5()">
                             <div class="card bg-light">
                                 <div class="card-body text-center">
                                     <img src="Images\daniel.jpg" alt="" class="rounded-circle mb-3" width="250">
@@ -166,6 +177,23 @@
                                     <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
                                 </div>
                                 <button id="button5" class="btn btn-primary" onclick="hideStaff5()">Hide Staff</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" id="staff6" onmouseover="showButton6()" onmouseout="hideButton6()">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <img src="Images\ann.jpg" alt="" class="rounded-circle mb-3" width="250">
+                                    <h3 class="card-title mb-3">Ann Mccain McCay</h3>
+                                    <p class="card-text">Software development is the process of conceiving, specifying, designing, programming, documenting, 
+                                        testing, and bug fixing involved in creating and maintaining applications, frameworks, or other software components. 
+                                        Software development involves writing and maintaining the source code, but in a broader sense, it includes all processes 
+                                        from the conception of the desired software through to the final manifestation of the software, typically in a 
+                                        planned and structured process.The sources of ideas for software products are plentiful.</p>
+                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                                </div>
+                                <button id="button3" class="btn btn-primary" onclick="hideStaff6()">Hide Staff</button>
                             </div>
                         </div>
                     </div>
