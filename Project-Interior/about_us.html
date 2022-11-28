@@ -50,40 +50,33 @@
             </div>
         </div>
 
-        <div class="card border-dark mb-3 text-center mx-auto mt-3 bg-light text-dark" style="max-width: 1050px;">
+        <div class="card border-dark mb-3 text-center mx-auto mt-3 bg-dark text-white" style="max-width: 1050px;">
             <div class="row g-0">
               <div class="col-md-4">
-                <img id="CEO_IMG" src="Images/MD.jpg" class="img-fluid rounded-start" alt="CEO Headshot" width="750">
+                <img id="CEO_IMG" src="Images\ceo.jpg" class="img-fluid rounded-start" alt="CEO Headshot" width="750">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 id="CEO_HD" class="card-title">Adrian B. Griffin</h5>
-                  <p id="CEO_TXT" class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  <h5 id="CEO_HD" class="card-title">Haro G. Warmen</h5>
+                  <p id="CEO_TXT" class="card-text">The CEO of a corporation or company typically reports to the board of directors 
+                    and is charged with maximizing the value of the business, which may include maximizing the share 
+                    price, market share, revenues or another element. In the non-profit and government sector, 
+                    CEOs typically aim at achieving outcomes related to the organization's mission, usually provided 
+                    by legislation. CEOs are also frequently assigned the role of main manager of the organization and 
+                    the highest-ranking officer in the C-suite.The responsibilities of an organization's CEO are set 
+                    by the organization's board of directors or other authority, depending on the organization's 
+                    structure. They can be far-reaching or quite limited and are typically enshrined in a formal 
+                    delegation of authority regarding business administration. Typically, responsibilities include being 
+                    an active decision-maker on business strategy and other key policy issues, leader, manager, and executor.
+                  </p>
                 </div>
               </div>
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img id="CEO_IMG" src="Images\ceo.jpg" class="img-fluid rounded-start" alt="CEO Headshot" width="750">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 id="CEO_HD" class="card-title">Haro G. Warmen</h5>
-                    <p id="CEO_TXT" class="card-text">The CEO of a corporation or company typically reports to the board of directors 
-                      and is charged with maximizing the value of the business, which may include maximizing the share 
-                      price, market share, revenues or another element. In the non-profit and government sector, 
-                      CEOs typically aim at achieving outcomes related to the organization's mission, usually provided 
-                      by legislation. CEOs are also frequently assigned the role of main manager of the organization and 
-                      the highest-ranking officer in the C-suite.The responsibilities of an organization's CEO are set 
-                      by the organization's board of directors or other authority, depending on the organization's 
-                      structure. They can be far-reaching or quite limited and are typically enshrined in a formal 
-                      delegation of authority regarding business administration. Typically, responsibilities include being 
-                      an active decision-maker on business strategy and other key policy issues, leader, manager, and executor.
-                    </p>
-                  </div>
-                </div>
             </div>
 
-          
+          </div>
+          <div class="container d-flex flex-row justify-content-center pb-3">
+            <button class="btn btn-primary" id="CEO_BTN" onclick="changeMD()">Change To MD</button>
+          </div>
 
           <section class="p-5 bg-dark">
             <div class="container">
@@ -175,23 +168,6 @@
                                 <button id="button5" class="btn btn-primary" onclick="hideStaff5()">Hide Staff</button>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6" id="staff6" onmouseover="showButton6()" onmouseout="hideButton6()">
-                            <div class="card bg-light">
-                                <div class="card-body text-center">
-                                    <img src="Images\Ann.jpg" alt="" class="rounded-circle mb-3" width="250">
-                                    <h3 class="card-title mb-3">Ann Whitlock</h3>
-                                    <p class="card-text">The sources of ideas for software products are plentiful. These ideas can come from market research 
-                                        including the demographics of potential new customers, existing customers, sales prospects who rejected the product, 
-                                        other internal software development staff, or a creative third party. Ideas for software products are usually first 
-                                        evaluated by marketing personnel for economic feasibility, for fit with existing channels distribution, for possible 
-                                        effects on existing product lines, required features, and for fit with the company's marketing objectives</p>
-                                    <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                                    <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                                    <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                                </div>
-                                <button id="button6" class="btn btn-primary" onclick="hideStaff6()">Hide Staff</button>
-                            </div>
-                        </div>
                     </div>
                 </p>
             </div>
@@ -273,21 +249,18 @@
             var button3 = document.getElementById('button3')
             var button4 = document.getElementById('button4')
             var button5 = document.getElementById('button5')
-            var button6 = document.getElementById('button6')
 
             var staff1 = document.getElementById('staff1')
             var staff2 = document.getElementById('staff2')
             var staff3 = document.getElementById('staff3')
             var staff4 = document.getElementById('staff4')
             var staff5 = document.getElementById('staff5')
-            var staff6 = document.getElementById('staff6')
 
             button1.style.visibility = "hidden"
             button2.style.visibility = "hidden"
             button3.style.visibility = "hidden"
             button4.style.visibility = "hidden"
             button5.style.visibility = "hidden"
-            button6.style.visibility = "hidden"
 
             function hideStaff1(){
                 staff1.style.visibility = "hidden"
@@ -302,9 +275,6 @@
                 staff4.style.visibility = "hidden"
             }
             function hideStaff5(){
-                staff5.style.visibility = "hidden"
-            }
-            function hideStaff6(){
                 staff5.style.visibility = "hidden"
             }
 
@@ -325,10 +295,6 @@
                 button4.style.visibility = "visible";
             }
             function showButton5()
-            {
-                button5.style.visibility = "visible";
-            }
-            function showButton6()
             {
                 button5.style.visibility = "visible";
             }
@@ -353,10 +319,6 @@
             {
                 button5.style.visibility = "hidden"
             }
-            function hideButton6()
-            {
-                button6.style.visibility = "hidden"
-            }
 
             function showStaff(){
                 staff1.style.visibility = "visible"
@@ -364,7 +326,6 @@
                 staff3.style.visibility = "visible"
                 staff4.style.visibility = "visible"
                 staff5.style.visibility = "visible"
-                staff6.style.visibility = "visible"
             }
         </script>
                 
